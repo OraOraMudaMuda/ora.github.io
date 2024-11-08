@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Mockup</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключаем библиотеку emailjs -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Обo мне</a></li>
+                <li><a href="#">Портфолио</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="left-section">
+                <div class="image-wrapper">
+                    <img src="images/profile.jpg" alt="Profile Image">
+                    <div class="social-circles">
+                        <a href="https://web.telegram.org/k/#@SpEedWaGoNOneLove" target="_blank">
+                            <img src="images/telegram-icon.png" alt="telegram">
+                        </a>
+                        <a href="https://vk.com/sidoro_vich_7331" target="_blank">
+                            <img src="images/vk-icon.png" alt="VK">
+                        </a>
+                        <a href="https://github.com/OraOraMudaMuda" target="_blank">
+                            <img src="images/github-icon.png" alt="github">
+                        </a>
+                        <a href="https://discord.com" target="_blank">
+                            <img src="images/discord-icon.png" alt="discord">
+                        </a>
+                    </div>
+                </div>
+                <div class="text-wrapper elegantshadow">
+                    <p>Приветствую! Меня зовут Даниил, я студент курса ИСП. На сайте вы можете ознакомиться с моими проектами и достижениями.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-section">
+            <h2 class="hover-grow">
+                <span>О</span><span>б</span><span>о</span><span>&nbsp;</span><span>м</span><span>н</span><span>е</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Я стремлюсь к созданию инновационных решений в области ИТ и постоянно расширяю свои знания в программировании. Мне интересно изучать новые технологии и участвовать в интересных проектах.</p>
+                </div>
+                <div class="about-photo">
+                    <img src="images/about.png" alt="About Photo">
+                </div>
+            </div>
+        </div>
+        <div class="projects-section">
+            <h2>Мои проекты</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <a href="https://github.com/OraOraMudaMuda" target="_blank">
+                        <img src="images/project1.png" alt="Project 1">
+                        <div class="project-text">
+                            <p>Игра 2048</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/OraOraMudaMuda" target="_blank">
+                        <img src="images/project2.png" alt="Project 2">
+                        <div class="project-text">
+                            <p>ИС для отдела сбыта и снабжения</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/OraOraMudaMuda" target="_blank">
+                        <img src="images/project3.png" alt="Project 3">
+                        <div class="project-text">
+                            <p>Визуальная новелла</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="stack-section">
+            <div class="stack-logos">
+                <img src="images/pycharm-logo.png" alt="PyCharm Logo" class="rotating-logo">
+                <img src="images/vs-logo.png" alt="Visual Studio Logo" class="rotating-logo">
+                <img src="images/python-logo.png" alt="Python Logo" class="rotating-logo">
+            </div>
+
+            <div class="stack-text">
+                <h2>Стек</h2>
+                <p>Я разрабатываю приложения и программы на следующих технологиях и языках программирования:</p>
+                <ul>
+                    <li><strong>Python:</strong> опыт в разработке приложений и скриптов для автоматизации.</li>
+                    <li><strong>JavaScript:</strong> создание интерактивных пользовательских интерфейсов.</li>
+                    <li><strong>HTML/CSS:</strong> верстка адаптивных веб-страниц.</li>
+                    <li><strong>SQL:</strong> работа с базами данных и оптимизация запросов.</li>
+                    <li><strong>Git:</strong> контроль версий и совместная разработка.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Форма отправки сообщения -->
+        <div class="contact-section">
+            <h2>Свяжитесь со мной</h2>
+            <form action="send_mail.php" method="POST"> 
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Сообщение:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
